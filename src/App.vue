@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <Main />
+    <Main :item="series" />
     <Footer />
   </div>
 </template>
@@ -11,12 +11,19 @@ import Header from "./components/Header.vue";
 import Main from "./components/Main.vue";
 import Footer from "./components/Footer.vue";
 
+import series from "./assets/data/dc-comics";
+
 export default {
   name: "App",
   components: {
     Header,
     Main,
     Footer,
+  },
+  data() {
+    return {
+      series,
+    };
   },
 };
 </script>
