@@ -3,7 +3,7 @@
     <img src="../assets/dc-logo.png" alt="DC Logo" />
     <ul>
       <li>characters</li>
-      <li>comics</li>
+      <li id="active">comics</li>
       <li>movies</li>
       <li>tv</li>
       <li>games</li>
@@ -40,6 +40,10 @@ div {
     li {
       text-transform: uppercase;
       font-weight: bold;
+    }
+    #active {
+      color: rgb(0, 140, 255);
+      border-bottom: 2px solid rgb(0, 140, 255);
     }
   }
 }
