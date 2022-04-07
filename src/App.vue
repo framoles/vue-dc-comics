@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <Main :item="series" />
+    <Main :items="series" />
     <Footer />
   </div>
 </template>
